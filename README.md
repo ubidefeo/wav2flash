@@ -1,4 +1,4 @@
-#wav2flash
+##wav2flash
 
 Initially a rework of the popular [wav2c](https://github.com/olleolleolle/wav2c) used to convert 8 bit, 8kHz, Mono Wave files to c headers, this evolved into a way to parse said wave files into data for an SPI Flash memory.
 
