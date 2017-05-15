@@ -59,7 +59,7 @@ void fillEmptyFile(FILE *_fileStream, uint32_t _fileSize);
 
 
 uint32_t totalWaveFiles;
-uint16_t soundDataOffset;
+uint32_t soundDataOffset;
 int main(int argc, char *argv[])
 {
 	printf("\n\n");

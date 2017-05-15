@@ -1,0 +1,35 @@
+flashrom v0.9.9-r1955 on Darwin 15.6.0 (x86_64)
+flashrom was built with LLVM Clang 8.0.0 (clang-800.0.42.1), little endian
+Command line (11 args): flashrom --chip SST25VF020B --programmer buspirate_spi:dev=/dev/tty.usbmodem00000001,spispeed=1M -w ./roms/flashChip.rom --output logs/output.log -n -V -V
+Calibrating delay loop... OS timer resolution is 1 usecs, 2259M loops per second, delay more than 10% too short (got 86% of expected delay), recalculating... 2180M loops per second, 10 myus = 10 us, 100 myus = 161 us, 1000 myus = 1087 us, 10000 myus = 9787 us, 4 myus = 3 us, OK.
+Initializing buspirate_spi programmer
+Some requested serial options did not stick, continuing anyway.
+          observed    wanted
+c_cflag:  0x0003CB00  0x0000CB00
+c_lflag:  0x00000000  0x00000000
+c_iflag:  0x00000000  0x00000000
+c_oflag:  0x00000000  0x00000000
+Detected Bus Pirate hardware v4
+Detected Bus Pirate firmware 7.0 ("v7.0")
+Using SPI command set v2.
+SPI speed is 1MHz
+Raw bitbang mode version 1
+Raw SPI mode version 1
+The following protocols are supported: SPI.
+Probing for SST SST25VF020B, 256 kB: probe_spi_rdid_generic: id1 0xbf, id2 0x258c
+Found SST flash chip "SST25VF020B" (256 kB, SPI) on buspirate_spi.
+Chip status register is 0x0c.
+Chip status register: Block Protect Write Disable (BPL) is not set
+Chip status register: Auto Address Increment Programming (AAI) is not set
+Chip status register: Block Protect 3 (BP3) is not set
+Chip status register: Block Protect 2 (BP2) is not set
+Chip status register: Block Protect 1 (BP1) is set
+Chip status register: Block Protect 0 (BP0) is set
+Chip status register: Write Enable Latch (WEL) is not set
+Chip status register: Write In Progress (WIP/BUSY) is not set
+Some block protection in effect, disabling... disabled.
+Reading old flash chip contents... done.
+Erasing and writing flash chip... Trying erase function 0... 0x000000-0x000fff:EW, 0x001000-0x001fff:EW, 0x002000-0x002fff:EW, 0x003000-0x003fff:EW, 0x004000-0x004fff:EW, 0x005000-0x005fff:EW, 0x006000-0x006fff:EW, 0x007000-0x007fff:EW, 0x008000-0x008fff:EW, 0x009000-0x009fff:EW, 0x00a000-0x00afff:EW, 0x00b000-0x00bfff:EW, 0x00c000-0x00cfff:S, 0x00d000-0x00dfff:S, 0x00e000-0x00efff:S, 0x00f000-0x00ffff:S, 0x010000-0x010fff:S, 0x011000-0x011fff:EW, 0x012000-0x012fff:W, 0x013000-0x013fff:W, 0x014000-0x014fff:W, 0x015000-0x015fff:W, 0x016000-0x016fff:W, 0x017000-0x017fff:W, 0x018000-0x018fff:W, 0x019000-0x019fff:W, 0x01a000-0x01afff:W, 0x01b000-0x01bfff:W, 0x01c000-0x01cfff:S, 0x01d000-0x01dfff:S, 0x01e000-0x01efff:S, 0x01f000-0x01ffff:S, 0x020000-0x020fff:S, 0x021000-0x021fff:S, 0x022000-0x022fff:S, 0x023000-0x023fff:S, 0x024000-0x024fff:S, 0x025000-0x025fff:S, 0x026000-0x026fff:S, 0x027000-0x027fff:S, 0x028000-0x028fff:S, 0x029000-0x029fff:S, 0x02a000-0x02afff:S, 0x02b000-0x02bfff:S, 0x02c000-0x02cfff:S, 0x02d000-0x02dfff:S, 0x02e000-0x02efff:S, 0x02f000-0x02ffff:S, 0x030000-0x030fff:S, 0x031000-0x031fff:S, 0x032000-0x032fff:S, 0x033000-0x033fff:S, 0x034000-0x034fff:S, 0x035000-0x035fff:S, 0x036000-0x036fff:S, 0x037000-0x037fff:S, 0x038000-0x038fff:S, 0x039000-0x039fff:S, 0x03a000-0x03afff:S, 0x03b000-0x03bfff:S, 0x03c000-0x03cfff:S, 0x03d000-0x03dfff:S, 0x03e000-0x03efff:S, 0x03f000-0x03ffff:S
+Erase/write done.
+Raw bitbang mode version 1
+Bus Pirate shutdown completed.
