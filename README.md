@@ -22,5 +22,5 @@ Data is organised linearly to be read from a microcontroller over SPI or other p
 ### using it with flashrom
 using [flashrom](https://www.flashrom.org/Flashrom) and a [Bus Pirate 3.6 or 4](https://www.seeedstudio.com/Bus-Pirate-v4-p-740.html) the data file can be uploaded to an SPI chip or dumped to a local file.
 `make dump` will extract the Flash content to `flashDump.rom`
-`make flash` will take the `outputFile` from the `rom` folder and flash it.
+`make flash` will take the `inputFile` from the `rom` folder and flash it.
 The above process can be a bit cumbersome because of issues with the Bus Pirate firmware, but once you're up-to-date it should be fine.
