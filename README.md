@@ -17,7 +17,7 @@ Data is organised linearly to be read from a microcontroller over SPI or other p
 ### usage
 `wav2flash -o outputFile [-s ROM size] [-i inputFile(s)]`
 
-* -s may be omitted and defaults to a 2Mbit (262144)
+* -s may be omitted and defaults to a 2Mbit (262144 Bytes) addressable space
 * -i is added as last option/argument to allow expanding of multiple files (i.e.: folder/*.wav)`
 
 ### using it with flashrom
