@@ -17,8 +17,8 @@ Data is organised linearly to be read from a microcontroller over SPI or other p
 ### usage
 `wav2flash -o outputFile [-s ROM size] [-i inputFile(s)]`
 
-`-s may be omitted and defaults to a 2Mbit (262144)`
-`-i is added as last option/argument to allow expanding of multiple files (i.e.: folder/*.wav)`
+* -s may be omitted and defaults to a 2Mbit (262144)
+* -i is added as last option/argument to allow expanding of multiple files (i.e.: folder/*.wav)`
 
 ### using it with flashrom
 using [flashrom](https://www.flashrom.org/Flashrom) and a [Bus Pirate 3.6 or 4](https://www.seeedstudio.com/Bus-Pirate-v4-p-740.html) the data file can be uploaded to an SPI chip or dumped to a local file.
